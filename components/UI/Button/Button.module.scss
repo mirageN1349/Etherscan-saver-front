@@ -1,0 +1,25 @@
+.button {
+  width: 206.27px;
+  height: 60px;
+
+  background: #7678ed;
+  border-radius: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #ffffff;
+  border: none;
+  transition: all 0.2s;
+
+  &:hover {
+    background: #595bcf;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,51 @@
+.transaction {
+  &_container {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+
+    & p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+
+      color: #ffffff;
+      margin-left: 10px;
+    }
+
+    & span {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #fffbfb;
+      display: flex;
+      justify-content: flex-end;
+
+      width: 200px;
+    }
+  }
+
+  &_status {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 60px;
+
+    & p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+
+      color: #5d6588;
+    }
+  }
+}
