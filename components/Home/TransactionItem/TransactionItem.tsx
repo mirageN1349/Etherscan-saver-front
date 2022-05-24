@@ -3,7 +3,7 @@ import { UISvgSelector } from '../../UI/UISvgSelector';
 import s from './TransactionItem.module.scss';
 
 import { Transaction } from '../../../@types/Entities/Transaction';
-import { useActiveAdress } from '../../../hooks/useActiveAdress';
+import { useActiveAddress } from '../../../hooks/useActiveAddress';
 import { BalanceSvgSelector } from '../BalanceCard/BalanceSvgSelector';
 
 type Props = {
@@ -29,13 +29,13 @@ function TransactionReceived() {
 }
 
 export function TransactionItem({ item: { from, value } }: Props) {
-  const currentAdress = useActiveAdress();
+  const currentAddress = useActiveAddress();
 
   return (
     <div className={s.transaction_container}>
       <UISvgSelector id="eth" />
       <p>ETH </p>
-      {currentAdress === from ? <TransactionSent /> : <TransactionReceived />}
+      {currentAddress === from ? <TransactionSent /> : <TransactionReceived />}
       <span> {value} </span>
     </div>
   );
